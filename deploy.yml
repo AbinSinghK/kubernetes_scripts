@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment 
+kind: Deployment 
 metadata:
   name: web-server
   labels:
@@ -16,7 +16,7 @@ template:
   spec:
     containers:
     - name: apache
-      image: Apache
+      image: httpd
       ports:
       - containerport: 80
 
